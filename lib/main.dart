@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Login.dart';
 import 'Home.dart';
+import './learn/local-storage.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,10 +29,11 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: "login",
+      initialRoute: "localStarage",
       routes: {
         "home": (context) => Home(),
         "login": (context) => Login(),
+        "localStarage": (context) => LocalStorage()
       },
     );
   }
